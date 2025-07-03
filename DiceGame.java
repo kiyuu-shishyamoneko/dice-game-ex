@@ -14,12 +14,10 @@ public class DiceGame {
 
        int totalValue=rollDice();
        if(totalValue>7){
-            System.out.println("You won!");
+            System.out.println(name + " won!");
         }else{
-            System.out.println("You lost.");
+            System.out.println(name + " lost.");
         }
-        Scanner scanner=new Scanner(System.in);
-        scanner.close();
 
     }
     public static int rollDice() {
